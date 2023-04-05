@@ -101,31 +101,15 @@
                 <ul class="pull-right">
                   <li class="active">
                     <div class="mask active"></div>
-                    <a href="#hero" class="active">Home</a>
+                    <a href="{% url 'home' %}" class="active">Home</a>
                   </li>
                   <li>  
                     <div class="mask"></div>    
-                    <a href="#services">Services</a>
+                    <a href="{% url 'introduction' %}" class="active">Introduction</a>
                   </li>
                   <li>  
                     <div class="mask"></div>    
-                    <a href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#pricing">Pricing</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#team">Team</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#news">News</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#contact-us">Contact Us</a>
+                    <a href="{% url 'help' %}" class="active">Help</a>
                   </li>
                 </ul>
               </div>
