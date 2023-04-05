@@ -1,218 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- ================== Meta ======================= -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Easter - One Page Template in Easter Theme By Assem Deghady">  
-    <meta name="author" content="Assem Deghady">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <!-- ================== Meta:END ======================= -->
-
-    <title>Easter - One Page Template in Easter Theme</title>
-
-    <!-- ================== Favicon ============= -->  
-    {% comment %} <link rel="icon" href="favicon.ico" type="image/x-icon">       {% endcomment %}
-    <!-- ================== Favicon: END ============= -->
-
-    <!-- ================= Google Fonts =================== -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-    <!-- ================= Google Fonts: END =================== -->
-   
-    <!-- ================== Stylesheets ============= -->
-    {% comment %} "{% static 'css/bootstrap.css' %}" {% endcomment %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/prettyPhoto.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/switcher.css' %}">    
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
-    <!--  Skin -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/green.css' %}" title="green">
-    <link rel="alternate stylesheet" type="text/css" href="{% static 'css/red.css' %}" title="red">
-    <link rel="alternate stylesheet" type="text/css" href="{% static 'css/blue.css' %}" title="blue">
-    <link rel="alternate stylesheet" type="text/css" href="{% static 'css/yellow.css' %}" title="yellow">
-    <link rel="alternate stylesheet" type="text/css" href="{% static 'css/orange.css' %}" title="orange">
-    <link rel="alternate stylesheet" type="text/css" href="c{% static 'css/purple.css' %}" title="purple">    
-    <!--  Skin: END -->
-
-    <!--[if IE]>
-    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js' %}"></script>
-    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js' %}"></script>
-    <![endif]-->
-    <!-- ================= Stylesheets: END ============== -->    
-
-    <!-- ================== Preloader  =================== -->
-    <script type="text/javascript" src="{% static 'js/queryloader2.min.js' %}"></script>
-    <script>
-      window.addEventListener('DOMContentLoaded', function() {
-        "use strict";
-        new QueryLoader2(document.querySelector("body"), {
-          barColor: "#9BCA3E",
-          backgroundColor: "#111",
-          percentage: true,
-          barHeight: 1,
-          minimumTime: 200,
-          fadeOutTime: 1000
-        });
-      });
-    </script>
-    <!-- ================== Preloader: END  =================== -->
-
-    <!-- ================== Styleswitcher  =================== -->
-    <script type="text/javascript" src="{% static 'js/styleswitcher.js' %}"></script>
-    <script type="text/javascript">
-      function setLogo(color){
-        top_src_img = "{% static 'images/logo/" + color + "_logo_w.png' %}";
-        scroll_src_img = "{% static 'images/logo/" + color + "_logo.png' %}";
-        $("#top-logo").attr('src', top_src_img);
-        $("#scroll-logo").attr('src', scroll_src_img);
-      }      
-    </script>
-    <!-- ================== Styleswitcher: END  =================== -->
-
-  </head>
-  <body>
-
-    <div class="wrapper">
-      <div class="content-wrapper">
-        <!-- ============== Header =============== -->
-        <header class="navbar-fixed-top" data-spy="affix" data-offset-top="80">
-          <nav class="navbar main-nav">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span><i class="fa fa-bars fa-lg"></i></span>
-                </button>
-                <div class="navbar-brand pull-left">
-                  <a href="#" title="LOGO">
-                    <img src="{% static 'images/logo/green_logo_w.png' %}" id="top-logo" class="img-responsive" alt="LOGO">
-                    <img src="{% static 'images/logo/green_logo.png' %}" id="scroll-logo" class="img-responsive" alt="LOGO">                    
-                  </a> 
-                </div>
-              </div> 
-              <div class="collapse navbar-collapse main-navbar" id="navbar-menu">
-                <ul class="pull-right">
-                  <li class="active">
-                    <div class="mask active"></div>
-                    <a href="#hero" class="active">Home</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#services">Services</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#pricing">Pricing</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#team">Team</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#news">News</a>
-                  </li>
-                  <li>  
-                    <div class="mask"></div>    
-                    <a href="#contact-us">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <!-- ============== Header: END =============== -->
-
-        <!-- ============== Hero Carousel =============== -->
-        <section id="hero" class="hero-carousel">
-          <div class="layer"></div>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Slide Item -->
-              <div class="swiper-slide">
-                <div class="slide-content">
-                  <h1 class="headline">
-                    Welcome To <span class="highlight">Easter</span> Belle <span class="highlight">Treasure Hunt</span>
-                  </h1>          
-                  <h3 class="subline">
-                    A super cool treasure hunt designed by Luke and Henriette 
-                  </h3>
-                  <div class="action-btns">
-                    <a href="#" class="btn secondary">
-                      Begin
-                    </a>
-                    {% comment %} <a href="#" class="btn primary">
-                      Contact Us
-                    </a> {% endcomment %}
-                  </div>            
-                </div>         
-              </div>
-              <!-- ./Slide Item -->
+<!-- ============== Hero Carousel =============== -->
+<section id="hero" class="hero-carousel">
+  <div class="layer"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide Item -->
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1 class="headline">
+            Welcome To <span class="highlight">Easter</span> Belle <span class="highlight">Treasure Hunt</span>
+          </h1>          
+          <h3 class="subline">
+            A super cool treasure hunt designed by Luke and Henriette 
+          </h3>
+          <div class="action-btns">
+            <a href="#" class="btn secondary">
+              Begin
+            </a>
+            {% comment %} <a href="#" class="btn primary">
+              Contact Us
+            </a> {% endcomment %}
+          </div>            
+        </div>         
+      </div>
+      <!-- ./Slide Item -->
 {% comment %} 
-              <!-- Slide Item -->
-              <div class="swiper-slide">
-                <div class="slide-content">
-                  <h1 class="headline">
-                    Welcome To <span class="highlight">Easter</span> One Page <span class="highlight">Template</span>
-                  </h1>          
-                  <h3 class="subline">
-                    A Responsive One Page Template In Easter Theme  
-                  </h3>
-                  <div class="action-btns">
-                    <a href="#" class="btn secondary">
-                      Learn More
-                    </a>
-                    <a href="#" class="btn primary">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- ./Slide Item --> {% endcomment %}
+      <!-- Slide Item -->
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1 class="headline">
+            Welcome To <span class="highlight">Easter</span> One Page <span class="highlight">Template</span>
+          </h1>          
+          <h3 class="subline">
+            A Responsive One Page Template In Easter Theme  
+          </h3>
+          <div class="action-btns">
+            <a href="#" class="btn secondary">
+              Learn More
+            </a>
+            <a href="#" class="btn primary">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ./Slide Item --> {% endcomment %}
 {% comment %} 
-              <!-- Slide Item -->
-              <div class="swiper-slide">
-                <div class="slide-content">
-                  <h1 class="headline">
-                    Welcome To <span class="highlight">Easter</span> One Page <span class="highlight">Template</span>
-                  </h1>          
-                  <h3 class="subline">
-                    A Responsive One Page Template In Easter Theme  
-                  </h3>
-                  <div class="action-btns">
-                    <a href="#" class="btn secondary">
-                      Learn More
-                    </a>
-                    <a href="#" class="btn primary">
-                      Contact Us
-                    </a>
-                  </div>            
-                </div>
-              </div>
-              <!-- ./Slide Item -->
-            </div>       {% endcomment %}
+      <!-- Slide Item -->
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1 class="headline">
+            Welcome To <span class="highlight">Easter</span> One Page <span class="highlight">Template</span>
+          </h1>          
+          <h3 class="subline">
+            A Responsive One Page Template In Easter Theme  
+          </h3>
+          <div class="action-btns">
+            <a href="#" class="btn secondary">
+              Learn More
+            </a>
+            <a href="#" class="btn primary">
+              Contact Us
+            </a>
+          </div>            
+        </div>
+      </div>
+      <!-- ./Slide Item -->
+    </div>       {% endcomment %}
 
-            <!-- Navigation Arrows -->
-            {% comment %} <div class="swiper-button-next">
-              <i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="swiper-button-prev">
-              <i class="fa fa-chevron-left"></i>
-            </div>       {% endcomment %}
-          </div>    
-        </section> 
-        <!-- ============== Hero Carousel: END =============== -->
+    <!-- Navigation Arrows -->
+    {% comment %} <div class="swiper-button-next">
+      <i class="fa fa-chevron-right"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="fa fa-chevron-left"></i>
+    </div>       {% endcomment %}
+  </div>    
+</section> 
+<!-- ============== Hero Carousel: END =============== -->
 {% comment %} 
         <!-- ============== Services =============== -->
         <section id="services" class="services">
@@ -1033,56 +903,6 @@
         </section>
         <!-- ============== Social Links: END =============== --> {% endcomment %}
 
-        <!-- ============== Footer =============== -->
-        <footer>
-          <p>
-            © 2017 CREATED WITH CARE, WITH GREAT HELP FROM <a href="http://www.freepik.com" title="Vectors Design By Freepik.com">Freepik.com</a> &amp; <a href="http://www.designcontest.com" title="Social Eggs Design By DesignContest">DesignContest</a>. BY 
-            <a href="#" title="Developed By Assem Deghady">ASSEM DEGHADY</a>
-          </p>
-        </footer>
-        <!-- ============== Footer: END =============== -->
-      </div>    
-    </div>
 
-    <!-- ============== Styleswitcher =============== -->
-    <section id="style-switcher">
-      <h2>Colors <a href="#"><i class="fa fa-cog fa-spin"></i></a></h2>
-        <ul>
-          <li id="green">
-            <a href="#" onclick="setActiveStyleSheet('green'); setLogo('green'); return false;"></a>
-          </li>
-          <li id="blue">
-            <a href="#" onclick="setActiveStyleSheet('blue'); setLogo('blue'); return false;"></a>
-          </li>
-          <li id="orange">
-            <a href="#" onclick="setActiveStyleSheet('orange'); setLogo('orange'); return false;"></a>
-          </li>
-          <li id="red">
-            <a href="#" onclick="setActiveStyleSheet('red'); setLogo('red'); return false;"></a>
-          </li>
-          <li id="purple">
-            <a href="#" onclick="setActiveStyleSheet('purple'); setLogo('purple'); return false;"></a>
-          </li>
-          <li id="yellow">
-            <a href="#" onclick="setActiveStyleSheet('yellow'); setLogo('yellow'); return false;"></a>
-          </li>
-        </ul>
-    </section>
-    <!-- ============== Styleswitcher: END =============== -->
 
-    <!-- ================== Script  ============== -->
-    <script type="text/javascript" src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
-    <script src="{% static 'http://maps.google.com/maps/api/js?key=AIzaSyAHlg64m9bm75-waAZl2xOPTlbWV0oc5ps' %}"></script>    
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/gmaps.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/swiper.jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/swiper.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>    
-    <script type="text/javascript" src="{% static 'js/jquery.nav.js' %}"></script>    
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-    <!-- ================== Script:END ============== -->
-
-  </body>
-</html>
-
+{% endblock %}
