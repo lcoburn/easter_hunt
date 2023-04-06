@@ -5,4 +5,21 @@
 {% load static %}
 <h2> Clue 7</h2>
 
+
+<script>
+    function showhide(id) {
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+  }
+</script>
+<center>
+<a href="javascript:showhide('uniquename')">
+    Click here for more help.
+</a>
+
+<div id="uniquename" style="display:none;">
+    <p>Content goes here.</p>
+</div>
+</center>
+
 {% endblock %}
