@@ -47,7 +47,7 @@ $(document).ready(function(){
   //  ============== Testimonials =============== //
   var swiper = new Swiper('.testimonials .swiper-container', {
     pagination: '.testimonials .swiper-pagination',
-    autoplay: 3000,
+    autoplay: 30000,
     paginationClickable: true
   });
 
