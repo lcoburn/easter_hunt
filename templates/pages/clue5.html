@@ -3,9 +3,10 @@
 {% block content %}
 
 {% load static %}
-<h2> Clue 5</h2>
+<h2>5. Hinweis</h2>
 
-<hr>
+<h3>Wo ist Walter?
+</h3>
 
 <center>
   <div class="col-md-12 col-sm-12">
@@ -23,12 +24,22 @@
   }
 </script>
 <center>
+  <a href="javascript:showhide('walter')">
+    Klickt hier, wenn ihr Walter nicht kennt.
+  </a>
+  
+  <div id="walter" style="display:none;">
+      <img src="{% static 'images/bg/wally1.jpg' %}"  class="img-responsive" />
+  </div>
+</center>
+  
+<center>
 <a href="javascript:showhide('uniquename')">
-    Click here for more help.
+  Klickt hier, wenn ihr mehr Hilfe benötigt.
 </a>
 
 <div id="uniquename" style="display:none;">
-    <p>Bottom Left</p>
+    <p>unten links</p>
 </div>
 </center>
 
