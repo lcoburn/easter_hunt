@@ -3,7 +3,7 @@
 {% block content %}
 
 {% load static %}
-<center> <h2> Introduction</h2></center>
+<center> <h2>Einleitung</h2></center>
 
 <!-- ============== Hero Carousel =============== -->
 <section id="hero" class="hero-carousel">
@@ -14,10 +14,9 @@
         <div class="swiper-slide">
           <div class="slide-content">
             <h1 class="headline">
-              Slide 1 
             </h1>          
             <h3 class="subline">
-              This slide will be about QR codes 
+              Ihr seid auf der Suche nach QR Codes... 
             </h3>
             <div class="intro-images">
               <img src="{% static 'images/eggs/in1.jpg' %}"  class="img-responsive" />
@@ -29,10 +28,9 @@
         <div class="swiper-slide">
           <div class="slide-content">
             <h1 class="headline">
-                Slide 2 
             </h1>          
             <h3 class="subline">
-                This slide will be about Grid references codes 
+                ...oder Koordinaten, die ein Quadrat auf der Karte anzeigen. 
             </h3>
             <div class="intro-images">
               <img src="{% static 'images/eggs/in2.jpg' %}"  class="img-responsive" />
@@ -44,10 +42,9 @@
         <div class="swiper-slide">
           <div class="slide-content">
             <h1 class="headline">
-                Slide 3
             </h1>          
             <h3 class="subline">
-                This slide will be about pink cards 
+                Alle Hinweise findet ihr auf rosa Zetteln und die Karte auf dieser Webseite. 
             </h3>
             <div class="intro-images">
               <img src="{% static 'images/eggs/in3.jpg' %}"  class="img-responsive" />
@@ -59,13 +56,34 @@
         <div class="swiper-slide">
           <div class="slide-content">
             <h1 class="headline">
-              Here is your first clue
+              Hier ist euer erster Hinweis
             </h1>          
             <h3 class="subline">
-              Find the thermomix  
-            </h3>           
+              Meine Fähigkeiten sind breit und vielfältig wie der Tag,
+            </h3>
+            <h3 class="subline">
+              Doch ohne Strom bin ich wie ein Schiff ohne Flag.
+            </h3>  
+            
+<script>
+    function showhide(id) {
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+  }
+</script>
+<center>
+<a href="javascript:showhide('uniquename')" style="color:gray">
+    Klickt hier, wenn ihr mehr Hilfe benötigt.
+</a>
+
+<div id="uniquename" style="display:none;">
+  <p class="subline">Meine Fähigkeiten sind breit und vielfältig wie der Tag,</p>
+<p class="subline">Doch ohne Strom bin ich wie ein Schiff ohne Flag.</p>
+</div>
+</center>         
           </div>
         </div>
+        
         <!-- ./Slide Item -->
       </div>       
   

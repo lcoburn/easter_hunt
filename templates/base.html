@@ -91,7 +91,7 @@
                   <span><i class="fa fa-bars fa-lg"></i></span>
                 </button>
                 <div class="navbar-brand pull-left">
-                  <a href="#" title="LOGO">
+                  <a href="./" title="LOGO">
                     <img src="{% static 'images/logo/green_logo_w.png' %}" id="top-logo" class="img-responsive" alt="LOGO">
                     <img src="{% static 'images/logo/green_logo.png' %}" id="scroll-logo" class="img-responsive" alt="LOGO">                    
                   </a> 
@@ -99,17 +99,17 @@
               </div> 
               <div class="collapse navbar-collapse main-navbar" id="navbar-menu">
                 <ul class="pull-right">
-                  <li class="active">
+                  <li>
                     <div class="mask active"></div>
-                    <a href="{% url 'home' %}" class="active">Home</a>
+                    <a href="./">Home</a>
                   </li>
                   <li>  
                     <div class="mask"></div>    
-                    <a href="{% url 'introduction' %}" class="active">Introduction</a>
+                    <a href="{% url 'introduction' %}" class="active">Einleitung</a>
                   </li>
                   <li>  
                     <div class="mask"></div>    
-                    <a href="{% url 'map' %}" class="active">Map</a>
+                    <a href="{% url 'map' %}" class="active">Karte</a>
                   </li>
                   {% comment %} <li>  
                     <div class="mask"></div>    

@@ -3,11 +3,9 @@
 {% block content %}
 
 {% load static %}
-<h2> Clue 10</h2>
+<h2>10. Hinweis</h2>
 
-<h3> Luke lost his keys </h3>
-<h3> Brings to rubble pile. Dig out box. Slug inside. Qr11. </h3>
-
+<h3>Luke hat seine Schlüssel verloren!</h3>
 
 <script>
     function showhide(id) {
@@ -16,13 +14,15 @@
   }
 </script>
 <center>
-<a href="javascript:showhide('uniquename')">
-    Click here for more help.
-</a>
+    <a href="javascript:showhide('uniquename')">
+        Klickt hier, wenn ihr mehr Hilfe benötigt.
+    </a>
 
-<div id="uniquename" style="display:none;">
-    <p>Content goes here.</p>
-</div>
+    <div id="uniquename" style="display:none;">
+        <p>Die Tonfunktion könnte hilfreich sein</p>
+        <img src="{% static 'images/bg/tag.jpg' %}"  class="img-responsive" />
+    </div>
+
 </center>
 
 {% endblock %}
