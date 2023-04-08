@@ -32,7 +32,7 @@ $(document).ready(function(){
 
   //  ============== Hero Carousel =============== //
   var swiper = new Swiper('.hero-carousel .swiper-container', {
-    autoplay: 3000,
+    autoplay: 30000,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev'      
   });
