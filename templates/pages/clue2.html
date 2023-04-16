@@ -317,7 +317,7 @@
           
             <div class="game-details-container">
                 <h1>Buchstaben: <span id="player-score"></span></h1>
-                <h1> Frage: <span id="question-number"></span> / 10 </h1>
+                <h1> Frage: <span id="question-number"></span> / 9 </h1>
             </div>
 
             <div class="game-question-container">
@@ -375,83 +375,83 @@
 
 const questions = [
 {
-    question: "Was kann man in Apotheken kaufen und soll bei hartnäckigem Husten helfen?", 
-    optionA: "getrocknete Kirschenstiele", 
-    optionB: "ausgespuckte Apfelkerne",
-    optionC: "verfaulte Orangenschale",
-    optionD: "angebissene Quittenstücke",
+    question: "What is the largest County in Ireland?", 
+    optionA: "Cork", 
+    optionB: "Tipperary", 
+    optionC: "Louth", 
+    optionD: "Galway", 
     correctOption: "optionA",
     letter: "H"
 },
 {
-    question: "Wie nennt man die Umhüllungsblätter des Maiskolbens?",
-    optionA: "Lieschen",
-    optionB: "Röschen",
-    optionC: "Julchen", 
-    optionD: "Klärchen",
+    question: "What is the Liverpool FC Anthem?",
+    optionA: "You'll never walk alone!",
+    optionB: "You'll never walk home!",
+    optionC: "You'll never pee alone!", 
+    optionD: "L-I-V, E-R-P, double O L, Liverpool FC!",
     correctOption: "optionA",
     letter: "O"
 },
 {
-    question: "Auf wie viel Prozent der Fläche Deutschlands wird Landwirtschaft betrieben?",
-    optionA: "20 Prozent",
-    optionB: "35 Prozent", 
-    optionC: "50 Prozent", 
-    optionD: "70 Prozent",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionC",
     letter: "R"
 }, 
 {
-    question: "Was bedeutet der Name der italienischen Nachspeise 'Tiramisu' wörtlich?",
-    optionA: "süß und köstlich", 
-    optionB: "zieh mich hoch",
-    optionC: "das macht dick",
-    optionD: "Leckermäulchen",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionB",
     letter: "S"
 },
 {
-    question: "Wie viel Meter legt man zurück, während man im Auto bei 120 km/h für drei Sekunden auf sein Handy schaut?",
-    optionA: "ungefähr 15 Meter",
-    optionB: "knapp 30 Meter", 
-    optionC: "etwa 50 Meter",
-    optionD: "rund 100 Meter",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionD",
     letter: "E",
 },
 {
-    question: "Welcher Kinderbuchheld entpuppt sich als Nachfahre von einem der Heiligen Drei Könige?",
-    optionA: "Harry Potter", 
-    optionB: "Peter Pan", 
-    optionC: "Jim Knopf", 
-    optionD: "Pippi Langstrumpf",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionC",
     letter: "S",
 },
 {
-    question: "In welchem dieser Länder ist die Wahrscheinlichkeit, von einer Naturkatastrophe betroffen zu sein, laut Weltrisikobericht (2021) am kleinsten?",
-    optionA: "Schweden", 
-    optionB: "Italien", 
-    optionC: "Deutschland", 
-    optionD: "Irland",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionA",
     letter: "H",
 },
 {
-    question: "Was befindet sich dem Text eines Top-Ten-Hits zufolge im Kopf von Helene Fischer?",
-    optionA: "Losbude",
-    optionB: "Riesenrad", 
-    optionC: "Achterbahn",
-    optionD: "Autoscooter",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionC",
     letter: "O",
 },
 {
-    question: "Welcher berühmte Schriftsteller erbaute als diplomierter Architekt ein Freibad in Zürich?",
-    optionA: "Joseph Roth",
-    optionB: "Martin Walser",
-    optionC: "Max Frisch",
-    optionD: "Friedrich Dürrenmatt",
+    question: "?",
+    optionA: "",
+    optionB: "",
+    optionC: "", 
+    optionD: "",
     correctOption: "optionC",
     letter: "E",
 },
@@ -461,7 +461,7 @@ const questions = [
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
-    //function to shuffle and push 10 questions to shuffledQuestions array
+    //function to shuffle and push 9 questions to shuffledQuestions array
     while (shuffledQuestions.length <= questions.length - 1) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
