@@ -3,9 +3,13 @@
 {% block content %}
 
 {% load static %}
-<h2>4. Hinweis</h2>
+<h2>Clue 4.</h2>
 
-<img src="{% static 'images/bg/tree.jpg' %}"  class="img-responsive" />
+
+<h3>All zee monkees in zee Zoo</h3>
+<h4>Zay are very fond of Du!</h4>
+<img src="{% static 'images/bg/ref1.jpg' %}"  class="img-responsive" />
+
 
 <script>
     function showhide(id) {
@@ -15,12 +19,14 @@
 </script>
 <center>
 <a href="javascript:showhide('uniquename')">
-    Klickt hier, wenn ihr mehr Hilfe benötigt.
+    Click here for help
 </a>
 
 <div id="uniquename" style="display:none;">
-    <a href="https://youtube.com/shorts/9M8G5frfJB4?feature=share">Youtube video</a>
+    <p>There is a map on the website</p>
+    <a href="https://www.youtube.com/watch?v=AbzFdFVdDDM">Also Click here</a>
+
 </div>
-</center>
+
 
 {% endblock %}
