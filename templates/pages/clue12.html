@@ -3,12 +3,9 @@
 {% block content %}
 
 {% load static %}
-<h2>12. Hinweis</h2>
+<h2>Clue 12.</h2>
 
-<h3>Ich folge dir stets, doch gehe keinen Schritt,</h3>
-<h3>Du belädst mich und ziehst mich geschwind mit.</h3>
-<h3>Ich komme in verschiedenen Größen, doch keine Füße hab ich zum Stehen,</h3>
-<h3>Ohne mich würde das Transportieren nur schwer und mühsam gehen.</h3>
+<h3>Luke hat seine Schlüssel verloren!</h3>
 
 <script>
     function showhide(id) {
@@ -17,13 +14,15 @@
   }
 </script>
 <center>
-<a href="javascript:showhide('uniquename')">
-    Klickt hier, wenn ihr mehr Hilfe benötigt.
-</a>
+    <a href="javascript:showhide('uniquename')">
+        Click here for more help.
+    </a>
 
-<div id="uniquename" style="display:none;">
-    <p>Bella Casa</p>
-</div>
+    <div id="uniquename" style="display:none;">
+        <p>Find the keys</p>
+        <img src="{% static 'images/bg/tag.jpg' %}"  class="img-responsive" />
+    </div>
+
 </center>
 
 {% endblock %}

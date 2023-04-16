@@ -3,9 +3,9 @@
 {% block content %}
 
 {% load static %}
-<h2>5. Hinweis</h2>
+<h2>Clue 5</h2>
 
-<h3>Wo ist Walter?
+<h3>Where's Wally?
 </h3>
 
 <center>
@@ -25,21 +25,22 @@
 </script>
 <center>
   <a href="javascript:showhide('walter')">
-    Klickt hier, wenn ihr Walter nicht kennt.
+    Click here for more info.
   </a>
   
   <div id="walter" style="display:none;">
       <img src="{% static 'images/bg/wally1.jpg' %}"  class="img-responsive" />
+      <p> you are looking for this guy </p>
   </div>
 </center>
   
 <center>
 <a href="javascript:showhide('uniquename')">
-  Klickt hier, wenn ihr mehr Hilfe benötigt.
+  Click here for more information.
 </a>
 
 <div id="uniquename" style="display:none;">
-    <p>unten links</p>
+    <p>bottom left</p>
 </div>
 </center>
 

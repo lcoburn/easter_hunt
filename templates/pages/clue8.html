@@ -3,8 +3,26 @@
 {% block content %}
 
 {% load static %}
-<h2>8. Hinweis</h2>
-<h3>Schießt von der Markierung auf den Luftballon.</h3> 
-<h3>Wenn ihr ihn 5 mal getroffen habt, gibt es den nächsten Hinweis.</h3>
+<h2>Clue 8.</h2>
+
+<h3>You must find ze clue!</h3>
+<h4>Outside in front garden</h4>
+<img src="{% static 'images/bg/ref1a.jpg' %}"  class="img-responsive" />
+
+<script>
+    function showhide(id) {
+        var e = document.getElementById(id);
+        e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+  }
+</script>
+<center>
+<a href="javascript:showhide('uniquename')">
+    Click here for help
+</a>
+
+<div id="uniquename" style="display:none;">
+    <p>There is a map on the website</p>
+
+</div>
 
 {% endblock %}
