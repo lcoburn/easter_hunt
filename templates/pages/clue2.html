@@ -381,7 +381,7 @@ const questions = [
     optionC: "verfaulte Orangenschale",
     optionD: "angebissene Quittenstücke",
     correctOption: "optionA",
-    letter: "M"
+    letter: "H"
 },
 {
     question: "Wie nennt man die Umhüllungsblätter des Maiskolbens?",
@@ -390,7 +390,7 @@ const questions = [
     optionC: "Julchen", 
     optionD: "Klärchen",
     correctOption: "optionA",
-    letter: "U"
+    letter: "O"
 },
 {
     question: "Auf wie viel Prozent der Fläche Deutschlands wird Landwirtschaft betrieben?",
@@ -399,7 +399,7 @@ const questions = [
     optionC: "50 Prozent", 
     optionD: "70 Prozent",
     correctOption: "optionC",
-    letter: "E"
+    letter: "R"
 }, 
 {
     question: "Was bedeutet der Name der italienischen Nachspeise 'Tiramisu' wörtlich?",
@@ -408,7 +408,7 @@ const questions = [
     optionC: "das macht dick",
     optionD: "Leckermäulchen",
     correctOption: "optionB",
-    letter: "L"
+    letter: "S"
 },
 {
     question: "Wie viel Meter legt man zurück, während man im Auto bei 120 km/h für drei Sekunden auf sein Handy schaut?",
@@ -417,7 +417,7 @@ const questions = [
     optionC: "etwa 50 Meter",
     optionD: "rund 100 Meter",
     correctOption: "optionD",
-    letter: "L",
+    letter: "E",
 },
 {
     question: "Welcher Kinderbuchheld entpuppt sich als Nachfahre von einem der Heiligen Drei Könige?",
@@ -426,7 +426,7 @@ const questions = [
     optionC: "Jim Knopf", 
     optionD: "Pippi Langstrumpf",
     correctOption: "optionC",
-    letter: "T",
+    letter: "S",
 },
 {
     question: "In welchem dieser Länder ist die Wahrscheinlichkeit, von einer Naturkatastrophe betroffen zu sein, laut Weltrisikobericht (2021) am kleinsten?",
@@ -435,7 +435,7 @@ const questions = [
     optionC: "Deutschland", 
     optionD: "Irland",
     correctOption: "optionA",
-    letter: "O",
+    letter: "H",
 },
 {
     question: "Was befindet sich dem Text eines Top-Ten-Hits zufolge im Kopf von Helene Fischer?",
@@ -444,7 +444,7 @@ const questions = [
     optionC: "Achterbahn",
     optionD: "Autoscooter",
     correctOption: "optionC",
-    letter: "N",
+    letter: "O",
 },
 {
     question: "Welcher berühmte Schriftsteller erbaute als diplomierter Architekt ein Freibad in Zürich?",
@@ -453,16 +453,7 @@ const questions = [
     optionC: "Max Frisch",
     optionD: "Friedrich Dürrenmatt",
     correctOption: "optionC",
-    letter: "N",
-},
-{
-    question: "Wer muss beim Urlaub im Schwarzwald grundsätzlich die sogenannte Zwei-Meter-Regel beachten?",
-    optionA: "Nichtschwimmer",
-    optionB: "Hundebesitzer",
-    optionC: "Mountainbiker",
-    optionD: "Wohnmobilfahrer",
-    correctOption: "optionC",
-    letter: "E"
+    letter: "E",
 },
 ]
 
@@ -542,7 +533,7 @@ function handleNextQuestion(answer) {
     setTimeout(() => {
       resetOptionBackground()
       console.log(indexNumber, 'test')
-        if (indexNumber <= 9) {
+        if (indexNumber < 9) {
             NextQuestion(indexNumber)
         }
         else {
